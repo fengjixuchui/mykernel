@@ -32,7 +32,7 @@ qemu-system-x86_64 -kernel arch/x86/boot/bzImage
 
 ## your own OS kernel example code
 
-* mypcb.h、mymain.c和myinterrupt.c实现了一个简单的时间片轮转调度进程的精简内核，如下为进程上下文切换的关键代码:
+* mypcb.h、mymain.c和myinterrupt.c实现了一个简单的时间片轮转调度进程的精简内核，如下为进程上下文切换的关键代码（[视频讲解](https://mp.weixin.qq.com/s/SzpN1BNty5aPDZhNdCO5yA)）:
 ```
     	printk(KERN_NOTICE ">>>switch %d to %d<<<\n",prev->pid,next->pid);  
     	/* switch to next process */
@@ -61,3 +61,5 @@ qemu-system-x86_64 -kernel arch/x86/boot/bzImage
 * [操作系统导论](https://github.com/jserv/linuxkernel)
 * [《庖丁解牛Linux内核分析》](https://j.youzan.com/pfzVI9)
 
+## Contact us
+<img src="https://user-images.githubusercontent.com/609053/81026703-8c25df00-8ead-11ea-8254-29830c3e1146.png" alt="微信公众号互动二维码" width="100" align="bottom" />
